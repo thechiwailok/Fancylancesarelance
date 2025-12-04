@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Lanceys are Lance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /* 液態玻璃核心樣式 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            color: #fff;
+            padding: 2rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header.glass-card {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .hero.glass-card {
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 0.8rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .game-section.glass-card {
+            text-align: center;
+        }
+
+        .game-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .game-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .game-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .game-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        footer.glass-card {
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="glass-card">
+        <h1>Fancy Lanceys are Lance</h1>
+        <p>Lance Lo's Personal Website</p>
+    </header>
+
+    <section class="hero glass-card">
+        <h2>About Lance</h2>
+        <p>Lance has anger issue and he is friend of Bosco</p>
+    </section>
+
+    <section class="game-section glass-card">
+        <h3>🎮 Lance's Favourite Games</h3>
+        <ul class="game-list">
+            <li class="game-item">Roblox</li>
+            <li class="game-item">Minecraft</li>
+            <li class="game-item">Among Us</li>
+        </ul>
+    </section>
+
+    <footer class="glass-card">
+        <p>&copy; 2025 Fancy Lanceys are Lance | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
